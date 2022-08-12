@@ -10,6 +10,11 @@ The following dependencies are required (plus Java and Maven):
 * `autoconf`
 * `build-essentials`
 * `gcc` (Linux) or `clang` (OS X) for building the shared library
+* NOTE: for arm64 build Azul JDKs is required.
+
+For Mac this combination is enough:
+* `brew install autoconf`
+* `brew install automake`
     
 ### Installation
 

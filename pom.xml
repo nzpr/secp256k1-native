@@ -34,6 +34,8 @@
   <properties>
     <github.org>rchain</github.org>
     <github.repo>secp256k1-native</github.repo>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <distributionManagement>
     <snapshotRepository>
@@ -159,6 +161,7 @@
       <modules>
         <module>linux-x86_64</module>
         <module>osx-x86_64</module>
+        <module>osx-aarch64</module>
       </modules>
     </profile>
     <profile>
@@ -178,10 +181,23 @@
       <activation>
         <os>
           <family>mac</family>
+          <arch>x86_64</arch>
         </os>
       </activation>
       <modules>
         <module>osx-x86_64</module>
+      </modules>
+    </profile>
+     <profile>
+      <id>osx_m1</id>
+      <activation>
+        <os>
+          <family>mac</family>
+          <arch>aarch64</arch>
+        </os>
+      </activation>
+      <modules>
+        <module>osx-aarch64</module>
       </modules>
     </profile>
   </profiles>

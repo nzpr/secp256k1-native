@@ -1,3 +1,6 @@
+[submodule "secp256k1-zkp"]
+	path = secp256k1-zkp
+	url = git@github.com:bitcoin-s/secp256k1-zkp.git
 [submodule "secp256k1"]
 	path = secp256k1
-	url = https://github.com/bitcoin-core/secp256k1.git
+	url = https://github.com/nzpr/secp256k1
